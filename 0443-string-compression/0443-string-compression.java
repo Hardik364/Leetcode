@@ -2,36 +2,37 @@ class Solution {
     public int compress(char[] chars) {
         int left = 0;
         int right = 0;
-        StringBuilder res = new StringBuilder();
+        
+        String s = "";
+
         int n = chars.length;
-        while (right < n) {
-            if (chars[left] != chars[right]) {
+
+        while(right != n)
+        {
+            if(chars[left] != chars[right])
+            {
                 int temp = right - left;
-                if (temp > 1) {
-                    res.append(chars[left]);
-                    res.append(temp);
-                } else {
-                    res.append(chars[left]);
+                s = s + chars[left];
+                if(temp > 1)
+                {
+                    s = s + temp;
                 }
                 left = right;
-                //    right++;
-
-            } else {
+            }
+            else 
+            {
                 right++;
             }
+        }
+        int last = right - left;
+        s = s + chars[n-1];
+        
+        if(last > 1) s = s + last;
 
+        for(int i = 0; i<s.length(); i++)
+        {
+            chars[i] = s.charAt(i);
         }
-        int temp = right - left;
-        if (temp > 1) {
-            res.append(chars[left]);
-            res.append(temp);
-        } else {
-            res.append(chars[left]);
-        }
-
-        for (int i = 0; i < res.length(); i++) {
-            chars[i] = res.charAt(i);
-        }
-        return res.length();
+        return s.length();
     }
 }
