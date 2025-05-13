@@ -27,15 +27,16 @@ class Solution {
         return true;
     }
     public int shipWithinDays(int[] arr, int days) {
-        int low = Integer.MIN_VALUE;
+        int heavy = Integer.MIN_VALUE;
         int sum = 0;
         for(int i = 0; i<arr.length; i++)
         {
-            low = Math.max(low,arr[i]);
+            heavy = Math.max(heavy,arr[i]);
             sum = sum + arr[i];
         }
         int high = sum;
         int ans = 0;
+        int low = Math.max(heavy, sum/days);
         while(low <= high)
         {
             int mid = low + (high - low) / 2;
