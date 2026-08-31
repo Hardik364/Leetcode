@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0001-two-sum](https://github.com/Hardik364/Leetcode/tree/main/0001-two-sum/) | Easy |
 | [0075-sort-colors](https://github.com/Hardik364/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0189-rotate-array](https://github.com/Hardik364/Leetcode/tree/main/0189-rotate-array/) | Medium |
+| [0867-transpose-matrix](https://github.com/Hardik364/Leetcode/tree/main/0867-transpose-matrix/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -34,4 +35,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0075-sort-colors](https://github.com/Hardik364/Leetcode/tree/main/0075-sort-colors/) | Medium |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0867-transpose-matrix](https://github.com/Hardik364/Leetcode/tree/main/0867-transpose-matrix/) | Easy |
+## Simulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0867-transpose-matrix](https://github.com/Hardik364/Leetcode/tree/main/0867-transpose-matrix/) | Easy |
 <!---LeetCode Topics End-->
